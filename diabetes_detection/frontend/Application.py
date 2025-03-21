@@ -14,7 +14,7 @@ with open(file_path, "rb") as file:
     Classifier = pickle.load(file)
     
 #  Streamlit App UI
-st.title("🩺 Diabetes Prediction App")
+st.title("🩺 Diabetes Prediction System")
 st.write("Enter your details below to check for diabetes risk.")
 
 #  User Inputs (Ensure float64 type)
@@ -43,9 +43,9 @@ if st.button("Predict"):
     
     # Show Result
     if prediction[0] == 1:
-        st.error("🚨 Diabetes positive! Please consult a doctor.")
+        st.error("Diabetes positive! Please consult a doctor.")
     else:
-        st.success("✅ Diabetes negative! Stay Healthy. 😃")
+        st.success("Diabetes negative! Stay Healthy.")
 
 
 
